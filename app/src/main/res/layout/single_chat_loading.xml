@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="1dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp">
+
+            <com.eyalbira.loadingdots.LoadingDots
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:LoadingDots_auto_play="true"
+                android:id="@+id/dots"
+                app:LoadingDots_dots_color="@color/colorAccent"
+                app:LoadingDots_dots_count="3"
+                app:LoadingDots_dots_size="10dp"
+                app:LoadingDots_dots_space="3dp"
+                app:LoadingDots_loop_duration="800"
+                app:LoadingDots_loop_start_delay="100"
+                app:LoadingDots_jump_duration="200"
+                app:LoadingDots_jump_height="7dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

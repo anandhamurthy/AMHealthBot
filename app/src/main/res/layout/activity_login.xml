@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Login.LoginActivity"
+    android:id="@+id/Login_F">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_title"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Login to AMHealthBot"
+        android:textColor="@color/colorBlack"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sign_in_google_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:paddingTop="15dp"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="@color/colorBlack"
+        android:layout_above="@+id/login_google_facebook"
+        android:text="Using Google"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:id="@+id/login_google_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="14dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/login_google"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/google" />
+
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_terms_condition_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/nunito"
+        android:paddingTop="15dp"
+        android:textColor="@color/colorBlack"
+        android:layout_below="@+id/login_google_facebook"
+        android:text="By signing up, you confirm that you agree to our \n Terms of Use and have read and understood \n our Privacy Policy."
+        android:gravity="center" />
+
+
+</RelativeLayout>
+

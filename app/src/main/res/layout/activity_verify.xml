@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent"
+    tools:context=".Login.VerifyActivity">
+
+
+    <TextView
+        android:id="@+id/verify_command_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/nunito_bold"
+        android:layout_margin="10dp"
+        android:text="Verifying "
+        android:textSize="20dp"
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/verify_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verify_command_text"
+        android:layout_margin="5dp"
+        android:textSize="18dp"
+        android:fontFamily="@font/nunito"
+        android:text="Waiting to automatically detect a OTP sent to "
+        android:gravity="center"
+        android:textColor="@color/colorBlack" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/verify_code_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" OTP"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/verify_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/verify_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="6"
+            android:digits="0123456789"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/nunito"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verify_code_layout"
+        android:layout_margin="5dp"
+        android:weightSum="2"
+        android:id="@+id/verify_resend_otp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend OTP"
+            android:textSize="20dp"
+            android:fontFamily="@font/nunito"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00.00"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"
+            android:gravity="end"
+            android:id="@+id/verify_timer"
+            android:fontFamily="@font/nunito"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:layout_gravity="end"
+            android:layout_marginRight="10dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/verify_resend_otp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/verify_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/colorAccent"
+            android:text="Done"
+            android:visibility="gone"
+            android:fontFamily="@font/nunito"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+        <Button
+            android:id="@+id/verify_resend"
+            android:layout_width="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="Resend"
+            android:fontFamily="@font/nunito"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

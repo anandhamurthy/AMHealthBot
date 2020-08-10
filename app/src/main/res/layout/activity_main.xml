@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:id="@+id/toolbar"
+        android:background="@drawable/rounded">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/toolbar_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/icon"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_toEndOf="@+id/toolbar_icon"
+            android:textSize="18dp"
+            android:id="@+id/title"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/colorBlack"
+            android:text="AMHealthBot" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/toolbar_more"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/more"/>
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/chat_list"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginStart="10dp"
+        android:id="@+id/chat_layout"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="bottom|end"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:id="@+id/chat"
+            android:background="@drawable/rounded"
+            android:layout_height="45dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/rounded"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+
+                <EditText
+                    android:id="@+id/chat_message"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/nunito"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Ask AMHealthBot."
+                    android:maxLines="6"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="15dp" />
+
+
+
+                <ImageView
+                    android:id="@+id/chat_add_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0"
+                    android:padding="10dp"
+                    android:src="@drawable/image" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/chat_send"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ask"
+            android:layout_weight="0"
+            android:tint="@color/colorWhite"
+            android:background="@drawable/icon_rounded"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

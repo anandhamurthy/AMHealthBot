@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "798323941086",
+    "firebase_url": "https://amhealthbot-9412a.firebaseio.com",
+    "project_id": "amhealthbot-9412a",
+    "storage_bucket": "amhealthbot-9412a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:798323941086:android:1737527b6ea762b38eec4f",
+        "android_client_info": {
+          "package_name": "com.amhealthbot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "798323941086-gve4vhhkrf4cj4ebtemm8d70ip828c8q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.amhealthbot",
+            "certificate_hash": "33e25df967642050da617acca8eab6d08cc35f0c"
+          }
+        },
+        {
+          "client_id": "798323941086-1n326f9rvp5lmfgd40ud42cllovmr89g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcI4Mms9uotI2jdXhTmMgbVWZIyK8mgew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "798323941086-1n326f9rvp5lmfgd40ud42cllovmr89g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

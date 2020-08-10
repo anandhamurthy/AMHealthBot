@@ -1,0 +1,6 @@
+Acne;Treatable by a medical professional,;Not Spreadable.
+Acne;Treatable by a medical professional,;Not Spreadable.
+Rosacea;Requires a medical diagnosis,;Treatment can help, but this condition can't be cured.
+Tinea pedis;Treatable by a medical professional,;Usually self-diagnosable,;Spreads easily.
+Urticaria;Usually self-treatable,;Usually self-diagnosable.
+Vitiligo;Treatment can help, but this condition can't be cured,;Requires a medical diagnosis.
